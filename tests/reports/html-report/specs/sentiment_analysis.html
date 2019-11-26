@@ -1,0 +1,660 @@
+
+	
+	
+  <!doctype html>
+  <html><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta charset="utf-8" />
+    <title>Gauge Test Results</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/open-sans.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+  <header class="top">
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href=".."><img src="../images/gaugeLogo.png" alt="Report logo"></a>
+        </div>
+        <h2 class="project">Project: tests</h2>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+  <div class="container">
+
+	
+  <div class="report-overview">
+    <div class="report_chart">
+      <div class="chart">
+        <svg id="pie-chart" data-results="1,0,0" data-total="1">
+          <path class="status failed" />
+          <path class="shadow failed" data-status="failed"><title>Failed: 1/1</title></path>
+          <path class="status passed" />
+          <path class="shadow passed" data-status="passed"><title>Passed: 0/1</title></path>
+          <path class="status skipped" />
+          <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/1</title></path>
+        </svg>
+      </div>
+    </div>
+    <div class="report_test-results">
+      <div class="report_test-result specs">
+          <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">1</span></div>
+          <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">1</span></div>
+          <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">0</span></div>
+          <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
+      </div>
+      <div class="report_test-result scenarios">
+          <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">2</span></div>
+          <div class="fail scenario-stats" data-status="failed"><span class="value">2</span></div>
+          <div class="pass scenario-stats" data-status="passed"><span class="value">0</span></div>
+          <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
+      </div>
+    </div>
+    <div class="report_details">
+      <ul>
+        <li>
+          <label>Environment </label>
+          <span>default</span>
+        </li>
+        
+        <li>
+          <label>Success Rate </label>
+          <span>0%</span>
+        </li>
+        <li>
+          <label>Total Time </label>
+          <span>00:00:00</span>
+        </li>
+        <li>
+          <label>Generated On </label>
+          <span>Nov 26, 2019 at 11:18am</span>
+        </li>
+      </ul>
+      
+  
+
+      
+  
+
+    </div>
+  </div>
+
+
+	
+
+	
+
+	
+		<div class="specifications">
+		
+  
+    <aside class="sidebar">
+      <h3 class="title">Specifications</h3>
+      <div class="searchbar">
+        <input id="searchSpecifications" placeholder="Type specification or tag name" type="text" />
+        <i class="fa fa-search"></i>
+      </div>
+      <div class='specs-sorting'>
+        <div class="sort sort-specs-name" data-sort-by="specs-name"><span class='sort-icons'><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span><span>Name</span></div>
+        <div class="sort sort-execution-time" data-sort-by="execution-time"><span class='sort-icons'><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span><span>Execution time</span></div>
+      </div>
+      <div id="listOfSpecifications">
+        <ul id="scenarios" class="spec-list">
+        
+          <a href="sentiment_analysis.html">
+            
+              <li class='failed spec-name'>
+            
+              <span id="scenarioName" class="scenarioname">Sentiment Analysis</span>
+              <span id="time" class="time">00:00:00</span>
+            </li>
+          </a>
+          
+        </ul>
+      </div>
+    </aside>
+  
+
+		
+  
+	
+  <div id="specificationContainer" class="details">
+    <header class="curr-spec">
+      <div class="spec-head-wrapper">
+        <h3 class="spec-head" title="/srv/apps/sentiment-analysis/tests/specs/sentiment_analysis.spec">Sentiment Analysis</h3>
+        <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
+          <ul>
+            <li class="fail"><span class="value">2</span><span class="txt">Failed</span></li>
+            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
+            <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="spec-meta">
+        <div class="spec-filename">
+          <label for="specFileName">File Path</label>
+          <input id="specFileName" value="/srv/apps/sentiment-analysis/tests/specs/sentiment_analysis.spec" readonly/>
+          <button class="clipboard-btn" data-clipboard-target="#specFileName" title="Copy to Clipboard">
+              <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
+          </button>
+        </div>
+        <span class="time">00:00:00</span>
+      </div>
+
+	
+  
+    <div class="tags scenario_tags contentSection">
+      <strong>Tags:</strong>
+      
+        <span> ml</span>
+      
+    </div>
+  
+
+	</header>
+	<div id="specItemsContainer">
+	
+    
+  
+
+    
+    
+
+    <div class="content">
+    
+  
+  <span><p>This test case handles the verification and validation of the model behind the Sentiment Analysis that is part of the
+service that we’re developing and deploying.</p>
+</span>
+  
+  
+
+  
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Endpoint Verification</h3>
+    <span class="time">00:00:00</span>
+
+	
+  
+    <div class="tags scenario_tags contentSection">
+      <strong>Tags:</strong>
+      
+        <span> functional</span>
+      
+        <span> verification</span>
+      
+    </div>
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span><p>Verify if the endpoint that allows interaction with Sentiment Analyzer is properly defined based on specifications. It</p>
+
+<p>must provide a query parameter <strong>text</strong> that acts as the input of the model and it cannot be empty. The response must</p>
+
+<p>be a JSON containing three attributes: <strong>text</strong>, <strong>score</strong> and <strong>sentiment</strong>.</p>
+</span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  
+    <h5 class='execution-time'>
+      <span class='time'>Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Request sentiment analysis with text 
+      </span>
+    
+  
+    
+      <span class='parameter'>"Perdy is testing this"</span>
+    
+  
+    
+      <span>
+         returns 
+      </span>
+    
+  
+    
+      <span class='parameter'>"200"</span>
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container failed">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=Perdy+is+testing+this (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05e0e2510&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))</pre>
+        </h4>
+        <pre class="stacktrace">Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 157, in _new_conn<br/>    (self._dns_host, self.port), self.timeout, **extra_kw<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/connection.py&#34;, line 84, in create_connection<br/>    raise err<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/connection.py&#34;, line 74, in create_connection<br/>    sock.connect(sa)<br/>ConnectionRefusedError: [Errno 111] Connection refused<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 672, in urlopen<br/>    chunked=chunked,<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 387, in _make_request<br/>    conn.request(method, url, **httplib_request_kw)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1252, in request<br/>    self._send_request(method, url, body, headers, encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1298, in _send_request<br/>    self.endheaders(body, encode_chunked=encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1247, in endheaders<br/>    self._send_output(message_body, encode_chunked=encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1026, in _send_output<br/>    self.send(msg)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 966, in send<br/>    self.connect()<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 184, in connect<br/>    conn = self._new_conn()<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 169, in _new_conn<br/>    self, &#34;Failed to establish a new connection: %s&#34; % e<br/>urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x7fa05e0e2510&gt;: Failed to establish a new connection: [Errno 111] Connection refused<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/adapters.py&#34;, line 449, in send<br/>    timeout=timeout<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 720, in urlopen<br/>    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py&#34;, line 436, in increment<br/>    raise MaxRetryError(_pool, url, error or ResponseError(cause))<br/>urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=Perdy+is+testing+this (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05e0e2510&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/root/.local/lib/python3.7/site-packages/getgauge/executor.py&#34;, line 31, in execute_method<br/>    step.impl(*params)<br/>  File &#34;/srv/apps/sentiment-analysis/tests/step_impl/sentiment_analysis.py&#34;, line 15, in assert_response_code<br/>    with requests.get(URL, params=params) as response:<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/api.py&#34;, line 75, in get<br/>    return request(&#39;get&#39;, url, params=params, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/api.py&#34;, line 60, in request<br/>    return session.request(method=method, url=url, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/sessions.py&#34;, line 533, in request<br/>    resp = self.send(prep, **send_kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/sessions.py&#34;, line 646, in send<br/>    r = adapter.send(request, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/adapters.py&#34;, line 516, in send<br/>    raise ConnectionError(e, request=request)<br/>requests.exceptions.ConnectionError: HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=Perdy+is+testing+this (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05e0e2510&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))<br/></pre>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  
+    <h5 class='execution-time'>
+      <span class='time'>Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class='step-info not-executed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Response schema contains attributes 
+      </span>
+    
+  
+    
+      <div class='inline-table'>
+        <div>
+          <table>
+  <tr>
+    <th>Attribute</th>
+  </tr>
+  <tbody>
+    
+    <tr><td>text</td></tr>
+    
+    <tr><td>score</td></tr>
+    
+    <tr><td>sentiment</td></tr>
+    
+  </tbody>
+</table>
+
+        </div>
+      </div>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  
+    <h5 class='execution-time'>
+      <span class='time'>Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class='step-info not-executed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Request sentiment analysis with text 
+      </span>
+    
+  
+    
+      <span class='parameter'>""</span>
+    
+  
+    
+      <span>
+         returns 
+      </span>
+    
+  
+    
+      <span class='parameter'>"400"</span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+        
+	
+  <div class='scenario-container failed'>
+    
+
+	
+  <div class="scenario-head">
+    <h3 class="head borderBottom">Model Validation</h3>
+    <span class="time">00:00:00</span>
+
+	
+  
+    <div class="tags scenario_tags contentSection">
+      <strong>Tags:</strong>
+      
+        <span> ml</span>
+      
+        <span> validation</span>
+      
+    </div>
+  
+
+	</div>
+  
+  
+
+  
+  
+
+	
+
+  
+  
+    
+  
+    <span><p>Validate the model predictions against a set of fixed data. This data set must contains a minimum list of well-known</p>
+
+<p>pairs of input and output to check that after retraining the model it will continue behaving the same way against these</p>
+
+<p>inputs.</p>
+</span>
+  
+
+  
+    
+  
+    
+  
+  <div class='step'>
+  
+  
+    <h5 class='execution-time'>
+      <span class='time'>Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class='step-info failed'>
+  
+  <ul>
+    <li class='step'>
+      <div class='step-txt'>
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+    
+      <span>
+        Analyze and validate the following texts 
+      </span>
+    
+  
+    
+      
+  <span class="modal-link">&lt;table:data/sentiment_analysis.csv&gt;</span>
+    <div class="modal">
+      <h2 class="modal-title">data/sentiment_analysis.csv</h2>
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <pre>Sentiment,Text
+Positive,The film tells the story of Thomas Anderson a computer hacker that in the world of hacking goes by the alias of Neo. When he is contacted by the mysterious outlaw Morpheus and having always questioned his reality, he is awakened to the truth that the world he's been living in is a simulated reality called the Matrix and that he's nothing more than a slave in this dystopian world, created and controlled by A.I powered machines.
+Positive,The writers and designers have done an outstanding job with filling the script, the set, and the costumes with all kinds of details true the comic books and the DC world. (The arcane laboratory is fantastic!) There is also a rich dark feel to the whole show that is pure Vertigo. The whole vibe is creepy and wonderful, and fills that blurry good-vs-evil void that Buffy and Angel left behind, without getting maudlin and soap-operatic. The chemistry between John and Zed is snarky and fun, and the supporting cast is so good. Papa Midnite is PERFECT, and Chas is brilliant. One thing that really works is the special effects. They don't get hokey or feel CGI'ed to ridiculousness- A contorting demon, instead of being twisted by camera tricks, is played by an acrobat that leaves you breathless the 15 seconds she is on scene. I so hope NBC doesn't let this one go; it would be as bad a move as Fox dropping Firefly.
+Positive,Which of the three movies is my favorite varies with my mood and the same holds true for Tolkien's books. When I am immersed in the story, ROTK is my favorite. When I simply want to have fun with the whole experience, I love Fellowship. And when I want something intense, evocative and thoughtful, I go for the Two Towers.
+Negative,The trailer made it seem like a great mystery murder of temptations but it was far far from that with a really dumb twist, acting directing was great but script was bad. I was really exited for this film, it just tanked.
+Negative,This movie was an absolute mess. I found myself ancy for it to be over. The first 30 minutes are spent watching Matthew try and catch a fish. I wish I was kidding. The performances felt forced and the acting was terrible. I ignored reviews and decided to give it a chance and I should have listened. Save your money. It's TERRIBLE</pre>
+      </div>
+    </div>
+
+    
+  
+  </div>
+
+  
+    
+        
+  <div class="error-container failed">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=The+film+tells+the+story+of+Thomas+Anderson+a+computer+hacker+that+in+the+world+of+hacking+goes+by+the+alias+of+Neo.+When+he+is+contacted+by+the+mysterious+outlaw+Morpheus+and+having+always+questioned+his+reality%2C+he+is+awakened+to+the+truth+that+the+world+he%27s+been+living+in+is+a+simulated+reality+called+the+Matrix+and+that+he%27s+nothing+more+than+a+slave+in+this+dystopian+world%2C+created+and+controlled+by+A.I+powered+machines. (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05de28350&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))</pre>
+        </h4>
+        <pre class="stacktrace">Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 157, in _new_conn<br/>    (self._dns_host, self.port), self.timeout, **extra_kw<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/connection.py&#34;, line 84, in create_connection<br/>    raise err<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/connection.py&#34;, line 74, in create_connection<br/>    sock.connect(sa)<br/>ConnectionRefusedError: [Errno 111] Connection refused<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 672, in urlopen<br/>    chunked=chunked,<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 387, in _make_request<br/>    conn.request(method, url, **httplib_request_kw)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1252, in request<br/>    self._send_request(method, url, body, headers, encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1298, in _send_request<br/>    self.endheaders(body, encode_chunked=encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1247, in endheaders<br/>    self._send_output(message_body, encode_chunked=encode_chunked)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 1026, in _send_output<br/>    self.send(msg)<br/>  File &#34;/usr/local/lib/python3.7/http/client.py&#34;, line 966, in send<br/>    self.connect()<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 184, in connect<br/>    conn = self._new_conn()<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connection.py&#34;, line 169, in _new_conn<br/>    self, &#34;Failed to establish a new connection: %s&#34; % e<br/>urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPConnection object at 0x7fa05de28350&gt;: Failed to establish a new connection: [Errno 111] Connection refused<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/adapters.py&#34;, line 449, in send<br/>    timeout=timeout<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py&#34;, line 720, in urlopen<br/>    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]<br/>  File &#34;/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py&#34;, line 436, in increment<br/>    raise MaxRetryError(_pool, url, error or ResponseError(cause))<br/>urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=The+film+tells+the+story+of+Thomas+Anderson+a+computer+hacker+that+in+the+world+of+hacking+goes+by+the+alias+of+Neo.+When+he+is+contacted+by+the+mysterious+outlaw+Morpheus+and+having+always+questioned+his+reality%2C+he+is+awakened+to+the+truth+that+the+world+he%27s+been+living+in+is+a+simulated+reality+called+the+Matrix+and+that+he%27s+nothing+more+than+a+slave+in+this+dystopian+world%2C+created+and+controlled+by+A.I+powered+machines. (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05de28350&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>Traceback (most recent call last):<br/>  File &#34;/root/.local/lib/python3.7/site-packages/getgauge/executor.py&#34;, line 31, in execute_method<br/>    step.impl(*params)<br/>  File &#34;/srv/apps/sentiment-analysis/tests/step_impl/sentiment_analysis.py&#34;, line 35, in assert_words_vowel_count<br/>    with requests.get(URL, params={&#34;text&#34;: row[1]}) as response:<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/api.py&#34;, line 75, in get<br/>    return request(&#39;get&#39;, url, params=params, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/api.py&#34;, line 60, in request<br/>    return session.request(method=method, url=url, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/sessions.py&#34;, line 533, in request<br/>    resp = self.send(prep, **send_kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/sessions.py&#34;, line 646, in send<br/>    r = adapter.send(request, **kwargs)<br/>  File &#34;/usr/local/lib/python3.7/site-packages/requests/adapters.py&#34;, line 516, in send<br/>    raise ConnectionError(e, request=request)<br/>requests.exceptions.ConnectionError: HTTPConnectionPool(host=&#39;localhost&#39;, port=8000): Max retries exceeded with url: /analyze/?text=The+film+tells+the+story+of+Thomas+Anderson+a+computer+hacker+that+in+the+world+of+hacking+goes+by+the+alias+of+Neo.+When+he+is+contacted+by+the+mysterious+outlaw+Morpheus+and+having+always+questioned+his+reality%2C+he+is+awakened+to+the+truth+that+the+world+he%27s+been+living+in+is+a+simulated+reality+called+the+Matrix+and+that+he%27s+nothing+more+than+a+slave+in+this+dystopian+world%2C+created+and+controlled+by+A.I+powered+machines. (Caused by NewConnectionError(&#39;&lt;urllib3.connection.HTTPConnection object at 0x7fa05de28350&gt;: Failed to establish a new connection: [Errno 111] Connection refused&#39;))<br/></pre>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+  
+
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+	
+	</div>
+
+      
+
+    </div>
+    </div>
+
+    
+  
+
+    
+    
+    </div>
+  
+
+		</div>
+	
+
+ 	</div>
+	</main>
+	
+  <footer class="footer">
+    <div class="container">
+      <p>Generated by Gauge HTML Report</p>
+    </div>
+  </footer>
+
+	
+    <script type="text/javascript">
+      var loadingImage = "../images/loading.gif";
+      var closeButton = "../images/close.gif";
+    </script>
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../js/auto-complete.min.js" type="text/javascript"></script>
+    <script src="../js/clipboard.min.js" type="text/javascript"></script>
+    <script src="../js/search_index.js" type="text/javascript"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
+    </body>
+  </html>
+

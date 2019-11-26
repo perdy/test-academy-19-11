@@ -1,0 +1,9 @@
+{
+	"Args": [
+		"run"
+	],
+	"FailedItems": [
+		"specs/sentiment_analysis.spec:7",
+		"specs/sentiment_analysis.spec:24"
+	]
+}

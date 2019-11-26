@@ -1,0 +1,1 @@
+var index = {"Tags":{"functional":["specs/sentiment_analysis.html"],"ml":["specs/sentiment_analysis.html"],"validation":["specs/sentiment_analysis.html"],"verification":["specs/sentiment_analysis.html"]},"Specs":{"Sentiment Analysis":["specs/sentiment_analysis.html"]}};
